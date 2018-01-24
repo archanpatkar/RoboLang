@@ -52,4 +52,6 @@ class Robot:
                 self.turtle.pendown()
             elif c.__class__.__name__ == "CircleCommand":
                 self.turtle.circle(c.radius)
+            elif c.__class__.__name__ == "DotCommand":
+                self.turtle.dot(c.size)
             time.sleep(1)
