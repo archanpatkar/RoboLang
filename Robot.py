@@ -20,21 +20,36 @@ class Robot:
                 self.x = c.x
                 self.y = c.y
                 self.turtle.setpos(self.x,self.y)
-            else:
+            elif c.__class__.__name__ == "MoveCommand":
                 dir = c.direction
                 print("Going {} for {} step(s).".format(dir, c.steps))
-
-                move = {
-                    "up": (0, 1),
-                    "down": (0, -1),
-                    "left": (-1, 0),
-                    "right": (1, 0)
-                }[dir]
-
-                # Calculate new robot position
-                self.x += c.steps * move[0]
-                self.y += c.steps * move[1]
-
-            self.turtle.setx(self.x)
-            self.turtle.sety(self.y)
+                if(dir == "up"):
+                    self.x += c.steps * 0
+                    self.y += c.steps * 1
+                    self.turtle.setx(self.x)
+                    self.turtle.sety(self.y)
+                elif(dir == "down"):
+                    self.x += c.steps * 0
+                    self.y += c.steps * -1 
+                    self.turtle.setx(self.x)
+                    self.turtle.sety(self.y)
+                elif(dir == "left"):
+                    self.x += c.steps * -1
+                    self.y += c.steps * 0
+                    self.turtle.setx(self.x)
+                    self.turtle.sety(self.y)
+                elif(dir == "right"):
+                    self.x += c.steps * 1
+                    self.y += c.steps * 0
+                    self.turtle.setx(self.x)
+                    self.turtle.sety(self.y)
+            elif c.__class__.__name__ == "GoToCommand":
+                self.x = c.x
+                self.y = c.y
+                self.turtle.penup()
+                self.turtle.setx(self.x)
+                self.turtle.sety(self.y)
+                self.turtle.pendown()
+            elif c.__class__.__name__ == "CircleCommand":
+                self.turtle.circle(c.radius)
             time.sleep(1)
