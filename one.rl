@@ -4,6 +4,9 @@ begin
     down 100
     right 150
     up 100
-    goto 10,10
-    circle 20
+    goto 200,200
+    dot 20
+    left 100
+    //goto 10,10
+    //circle 20
 end
