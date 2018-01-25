@@ -19,7 +19,7 @@ begin
         right 10
         circle 20
     end
-    repeat 7
+    repeat 10
         up 10
         circle 20
     end
