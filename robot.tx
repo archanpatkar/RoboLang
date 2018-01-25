@@ -5,7 +5,7 @@ Program:
 ;
 
 Command:
-  InitialCommand | MoveCommand | GoToCommand | CircleCommand | DotCommand
+  InitialCommand | MoveCommand | GoToCommand | CircleCommand | DotCommand | RepeatCommand
 ;
 
 InitialCommand:
@@ -26,6 +26,12 @@ CircleCommand:
 
 DotCommand:
   'dot' size=INT
+;
+
+RepeatCommand:
+  'repeat' times=INT
+    commands*=Command
+  'end'
 ;
 
 Direction:
