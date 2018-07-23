@@ -1,6 +1,8 @@
 # RoboLang
 ### A Language for Children to learn programming
 
+Robolang allows children to explore the land of Structured Programming with a Robot!
+
 ## Example
 ```
 begin
