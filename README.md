@@ -4,6 +4,8 @@
 Robolang allows children to explore the land of Structured Programming with a Robot!
 
 ## Example
+
+### `Code`
 ```
 begin
     goto 100,100
@@ -25,3 +27,6 @@ begin
     end
 end
 ```
+### `Output`
+<img src="./output.png" />
+
