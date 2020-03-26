@@ -1,7 +1,7 @@
 # RoboLang
-### An educational programming language for generative art
+### An educational programming language for algorithimic art
 
-Robolang allows children to explore the land of generative art using a simplified subset of Structured Programming with the metaphor of controlling a Robot!
+Robolang allows novice computer programmers and children to explore the land of algorithmic art(a specialization of generative art) and encouraging them to become Algorithmic artists or algorists using a simplified subset of Structured Programming and a simple metaphor of controlling a Robot!
 
 ## Example
 
